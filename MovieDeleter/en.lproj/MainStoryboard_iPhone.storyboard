@@ -13,6 +13,17 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Preparing to show movies" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaV-lT-Of4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4eR-bV-Xud"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="This should be set in code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hc-b1-ntA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="LkS-62-GdD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -21,28 +32,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JaV-lT-Of4" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="SGa-4R-cly"/>
+                            <constraint firstAttribute="trailing" secondItem="6hc-b1-ntA" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Ug7-9j-yhy"/>
                             <constraint firstAttribute="trailing" secondItem="JaV-lT-Of4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="VgZ-CW-8Kr"/>
-                            <constraint firstAttribute="bottom" secondItem="JaV-lT-Of4" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Zjw-Mh-BsX"/>
+                            <constraint firstItem="6hc-b1-ntA" firstAttribute="top" secondItem="JaV-lT-Of4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ftS-5o-yw7"/>
+                            <constraint firstItem="6hc-b1-ntA" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="hXZ-Rw-dfc"/>
                             <constraint firstItem="JaV-lT-Of4" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="uvm-G8-DJ8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="intLabel" destination="6hc-b1-ntA" id="L0t-NA-8EB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="MainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showMoviesFromSender:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="showMoviesButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

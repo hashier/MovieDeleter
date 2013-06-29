@@ -13,6 +13,7 @@
 @property (weak, nonatomic) UIActionSheet *sinkControlActionSheet;  // so we won't get multiple popovers
 @property (strong, nonatomic) UIPopoverController *imagePickerPopover;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *showMoviesButton;
+@property (weak, nonatomic) IBOutlet UILabel *intLabel;
 @end
 
 @implementation MainViewController
@@ -21,6 +22,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.intLabel.text = @"Set in viewDidLoad";
 }
 
 - (void)didReceiveMemoryWarning
