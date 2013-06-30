@@ -39,7 +39,6 @@
 		002C0462177EE87F002373D5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		002C046A177EE87F002373D5 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		002C046B177EE87F002373D5 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		002C0472177EEB42002373D5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		002C0474177EEB64002373D5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		005494F4177FC9E900568C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		005494F5177FC9E900568C00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
@@ -68,8 +67,6 @@
 		002C0440177EE87E002373D5 = {
 			isa = PBXGroup;
 			children = (
-				002C0474177EEB64002373D5 /* MobileCoreServices.framework */,
-				002C0472177EEB42002373D5 /* CoreMotion.framework */,
 				002C0452177EE87E002373D5 /* MovieDeleter */,
 				002C044B177EE87E002373D5 /* Frameworks */,
 				002C044A177EE87E002373D5 /* Products */,
@@ -87,6 +84,7 @@
 		002C044B177EE87E002373D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				002C0474177EEB64002373D5 /* MobileCoreServices.framework */,
 				002C044C177EE87E002373D5 /* UIKit.framework */,
 				002C044E177EE87E002373D5 /* Foundation.framework */,
 				002C0450177EE87E002373D5 /* CoreGraphics.framework */,
