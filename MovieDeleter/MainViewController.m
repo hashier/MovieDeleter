@@ -22,7 +22,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.intLabel.text = @"Set in viewDidLoad";
+    self.intLabel.text = NSLocalizedString(@"Set in viewDidLoad", @"For the translator");
 }
 
 - (void)didReceiveMemoryWarning
